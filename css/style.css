@@ -1,0 +1,41 @@
+body {
+    background-color: #eee;
+}
+
+/*
+1. posicionamiento
+2. modelo de caja - box model
+3. tipografía
+4. visual
+5. miselanios u otros
+*/
+
+:root {
+    /* colores */
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D4;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    /* --soft-black: #282623; */
+    --black: #282623;
+    --secondary-blue: #1A9AF7;
+    --secundary-orange: #FF9536;
+    /* --text-gray: #757575; */
+    /* --text2-gray: #B5B0AC; */
+    /* --text3-gray: #808080; */
+    --gray: #bababa;
+    --just-white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+}
+
+
