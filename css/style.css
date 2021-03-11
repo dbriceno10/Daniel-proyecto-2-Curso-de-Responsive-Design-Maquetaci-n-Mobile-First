@@ -1,5 +1,5 @@
 body {
-    background-color: #eee;
+    /* background-color: #eee; */
 }
 
 /*
@@ -13,7 +13,7 @@ body {
 :root {
     /* colores */
     --bitcoin-orange: #F7931A;
-    --soft-orange: #FFE9D4;
+    /* --soft-orange: #FFE9D4; */
     --soft-blue: #E7F5FF;
     --warm-black: #201E1C;
     /* --soft-black: #282623; */
@@ -25,6 +25,8 @@ body {
     /* --text3-gray: #808080; */
     --gray: #bababa;
     --just-white: #fff;
+    --soft-orange: #FFE9D5;
+    --off-white: #FAF8F7;
 }
 
 * {
@@ -38,4 +40,113 @@ html {
     font-family: "DM Sans", sans-serif;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    min-width: 320px;
+    /*Este ancho mínimo debido al mínimo ancho en los celulares
+    actuales*/
+    height: 334px;
+    /*Estas dimensiones "mínimas" de ancho y alto para el header
+    vienen del diseño en figma*/
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%); ;
+    /* font-family: "DM Sans",sans-serif; */
+    font-style: normal;
+}
 
+header picture img {
+    width: 151px;
+    height: 24px;
+    border: none;
+    margin-top: 60px;
+    /* margin-top: 78px; */
+    /* margin-left: 84px; */
+    /* align-self: center; */
+    /*align-self es la manera de asignar una posición
+    a un elemento que está dentro de un contenedor de tipo flex*/
+}
+
+.header--title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    align-self: center;
+    text-align: center;
+    margin-top: 32px;
+    /* margin-top: 40px; */
+}
+
+.header--title-container h1 {
+    color: var(--just-white);
+    /* font-weight: 700;
+    font-size: 24px;
+    line-height: 26px; */
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+
+.header--title-container p {
+    /* padding-top: 24px; */
+    margin-top: 24px;
+    /* margin-top: 25px; */
+    color: var(--soft-orange);
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+/* .header--button--container {
+    margin-top: 32px;
+    padding-top: 32px;
+    border: none;
+    width: 229px;
+    height: 48px;
+    background-color: #FAF8F7;
+    align-self: center;
+    margin: 0 auto;
+    border-radius: 4px;
+    position: absolute;
+} */
+/*Nota: recordar que cuando estamos en position: absolute, podemos utilizar top, left, right y botton para posicionar un elemento*/
+.header--button-container {
+    
+}
+
+.header--title-container .header--button {
+    position: absolute;
+    left: calc(50% - 114.5px);
+    /* left: 45.5px; */
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;/*229px-30px*/
+    height: 48px; /*48px-30px*/
+    background-color: var(--off-white);
+    /*sombra*/
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+}
+.header--title-container a {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--warm-black);
+}
+
+.header--button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("../assets/icons/down-arrow.svg");
+}
