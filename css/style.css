@@ -329,94 +329,48 @@ main {
     background-position: center;
 }
 
-.coin-bitcoin-logo {
+.main-trade--left-logo {
     display: inline-block;
     width: 15px;
     height: 15px;
     margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-tables-container .coin-bitcoin-logo {
     background-image: url("../assets/icons/bitcoin.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-.coin-ethereum-logo {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
+.main-tables-container .coin-ethereum-logo {
     background-image: url("../assets/icons/ethereum.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-.coin-ripple-logo {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
+.main-tables-container .coin-ripple-logo {
     background-image: url("../assets/icons/ripple.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-.coin-stellar-logo {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
+.main-tables-container .coin-stellar-logo {
     background-image: url("../assets/icons/stellar-coin.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-.comision-bitrade-logo {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
+.main-tables-container .comision-bitrade-logo {
     background-image: url("../assets/icons/bitrade.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     border-radius: 100%;
 }
 
-.comision-bipreco-logo {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
+.main-tables-container .comision-bipreco-logo {
     background-image: url("../assets/icons/bipreco.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     border-radius: 100%;
 }
 
-.comision-novadax-logo {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
+.main-tables-container .comision-novadax-logo {
     background-image: url("../assets/icons/novadax.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-.comision-coinex-logo {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
+.main-tables-container .comision-coinex-logo {
     background-image: url("../assets/icons/coinex.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .coin-table--date {
@@ -540,50 +494,29 @@ main {
     /* margin-top: 10px; */
 }
 
-.product-detail--card .clock-icon {
+.product-detail--card-icon {
     display: inline-block;
     width: 20px;
     height: 20px;
     margin-right: 10px;
     margin-bottom: 12px;
-    background-image: url("../assets/icons/clock.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.product-detail--card .clock-icon {
+    background-image: url("../assets/icons/clock.svg");
 }
 
 .product-detail--card .eye-icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    margin-bottom: 12px;
     background-image: url("../assets/icons/eye.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .product-detail--card .dollar-icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    margin-bottom: 12px;
     background-image: url("../assets/icons/dollar-sign.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .product-detail--card .check-icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    margin-bottom: 12px;
     background-image: url("../assets/icons/check-circle.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
