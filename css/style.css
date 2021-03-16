@@ -1,28 +1,11 @@
-body {
-    /* background-color: #eee; */
-}
-
-/*
-1. posicionamiento
-2. modelo de caja - box model
-3. tipografÃ­a
-4. visual
-5. miselanios u otros
-*/
-
 :root {
     /* colores */
     --bitcoin-orange: #F7931A;
-    /* --soft-orange: #FFE9D4; */
     --soft-blue: #E7F5FF;
     --warm-black: #201E1C;
-    /* --soft-black: #282623; */
     --black: #282623;
     --secondary-blue: #1A9AF7;
     --secundary-orange: #FF9536;
-    /* --text-gray: #757575; */
-    /* --text2-gray: #B5B0AC; */
-    /* --text3-gray: #808080; */
     --gray: #bababa;
     --just-white: #fff;
     --soft-orange: #FFE9D5;
@@ -63,11 +46,6 @@ header picture img {
     height: 24px;
     border: none;
     margin-top: 60px;
-    /* margin-top: 78px; */
-    /* margin-left: 84px; */
-    /* align-self: center; */
-    /*align-self es la manera de asignar una posiciÃ³n
-    a un elemento que estÃ¡ dentro de un contenedor de tipo flex*/
 }
 
 .header--title-container {
@@ -83,45 +61,23 @@ header picture img {
 
 .header--title-container h1 {
     color: var(--just-white);
-    /* font-weight: 700;
-    font-size: 24px;
-    line-height: 26px; */
     font-weight: bold;
     font-size: 2.4rem;
     line-height: 2.6rem;
 }
 
 .header--title-container p {
-    /* padding-top: 24px; */
     margin-top: 24px;
-    /* margin-top: 25px; */
     color: var(--soft-orange);
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.8rem;
 }
-
-/* .header--button--container {
-    margin-top: 32px;
-    padding-top: 32px;
-    border: none;
-    width: 229px;
-    height: 48px;
-    background-color: #FAF8F7;
-    align-self: center;
-    margin: 0 auto;
-    border-radius: 4px;
-    position: absolute;
-} */
-/*Nota: recordar que cuando estamos en position: absolute, podemos utilizar top, left, right y botton para posicionar un elemento*/
 .header--button-container {
-
 }
-
 .header--title-container .header--button {
     position: absolute;
     left: calc(50% - 114.5px);
-    /* left: 45.5px; */
     top: 270px;
     display: block;
     margin-top: 35px;
@@ -215,12 +171,13 @@ main {
 }
 
 /*Tablas*/
-/* .main-tables-container {
-    width: 70%;
-    min-width: 320px;
-    height: auto;
-    margin: 0 auto;
-} */
+.main-tables-container {
+    display: flex;
+    height: 360px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 /*Tabla de monedas*/
 .main-coin-table,
 .main-comision-table {
@@ -228,8 +185,9 @@ main {
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 15px 0;
     font-family: "Inter",sans-serif;
+    scroll-snap-align: center;
 }
 
 .coin-table--tittle {
@@ -457,7 +415,6 @@ main {
     max-width: 400px;
     min-height: 150px;
     margin: 15px auto;
-    /* padding: 16px 20px 20px 16px; */
     padding: 15px;
     background-color: var(--black);
     text-align: start;
@@ -466,7 +423,6 @@ main {
     margin-right: auto;
     border-radius: 15px;
     box-shadow:  0px 2px 4px rgba(255, 255, 255, 1);
-    /* box-shadow: 0 2px 4px #FFF; */
 }
 
 .product--card-title {
@@ -484,7 +440,6 @@ main {
     font-size: 1.4rem;
     line-height: 1.8rem;
     color: #808080;
-    /* margin-top: 10px; */
 }
 
 .product-detail--card-icon {
@@ -551,8 +506,6 @@ main {
     min-width: 288px;
     height: auto;
     margin: 0 auto;
-    /* margin-top: 50px; */
-    /* padding-top: 60px; */
     margin-bottom: 42px;
 }
 
@@ -572,16 +525,7 @@ main {
     line-height: 1.8rem;
     color: #757575;
     padding-top: 30px;
-    /* margin-top: 24px; */
-    /* margin-bottom: 42px; */
 }
-
-/* .plans-container--slider {
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    max-width: 500px;
-} */
 
 .plans-container--card {
     /* width: 250px; */
@@ -663,46 +607,6 @@ main {
     left: calc(50% - 60px);
 }
 
-/* .plan-card--tittle {
-    padding-top: 30px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: black;
-} */
-
-/* .plan-card--price {
-    padding: 5px 0;
-    font-size: 5.2rem;
-    font-weight: bold;
-    line-height: 6.3rem;
-    color: black;
-} */
-
-/* .plan-card--price span {
-    font-size: 1.2rem;
-    font-weight: 300;
-} */
-
-/* .plans-container--save-money {
-    font-size: 1.2rem;
-    color: #757575;
-} */
-
-/* .plan-card--ca {
-    width: 150px;
-    height: 48px;
-    margin-top: 20px;
-    background-color: var(--off-white);
-    border: 2px solid var(--bitcoin-orange);
-    border-radius: 4px;
-    font-family: "DM Sans",sans-serif;
-    font-size: 1.4rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-    color: var(--warm-black);
-} */
-
 .plans-container--slider .plans-container--card h3 {
     font-style: normal;
     /* font-weight: 500; */
@@ -742,8 +646,6 @@ main {
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: #757575;
-    /* padding-right: 25px;
-    padding-left: 25px; */
     margin-bottom: 16px;
 }
 
@@ -752,7 +654,6 @@ main {
     height: 48px;
     background-color:var(--off-white);
     border: 2px solid var(--bitcoin-orange);
-    /* box-sizing: border-box; */
     border-radius: 4px;
     margin-bottom: 24px;
     font-style: normal;
@@ -807,11 +708,3 @@ footer .footer-left {
     font-size: 1.4rem;
     line-height: 1.8rem;
 }
-
-/* .footer-left {
-    margin: 0 auto;
-}
-
-.footer-rigth {
-    margin: 0 auto;
-} */
