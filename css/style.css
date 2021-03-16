@@ -599,6 +599,16 @@ main {
     position: relative;
     scroll-snap-align: center;
 }
+
+.plans-container--slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    /* gap: 20px; */
+}
+
 .plans-container--slider .plans-container--card .plans-container--card-recomended {
     width: 120px;
     height: 31px;
@@ -763,15 +773,6 @@ main {
     background-position: center;
     background-repeat: no-repeat; */
     vertical-align: text-bottom;
-}
-
-.plans-container--slider {
-    display: flex;
-    height: 316px;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    /* gap: 20px; */
 }
 
 /*Footer*/
