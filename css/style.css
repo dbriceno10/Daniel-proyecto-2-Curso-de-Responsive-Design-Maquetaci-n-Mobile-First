@@ -41,7 +41,7 @@ header {
     font-style: normal;
 }
 
-header picture img {
+header div img {
     width: 151px;
     height: 24px;
     border: none;
@@ -735,8 +735,6 @@ footer .footer-left ul li {
 
 footer .footer-left ul li a {
     color: var(--just-white);
-
-
     text-decoration: none;
 }
 
@@ -745,4 +743,8 @@ footer .footer-left {
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.8rem;
+}
+
+footer .footer-left ul li a:hover {
+    color: slateblue;
 }
