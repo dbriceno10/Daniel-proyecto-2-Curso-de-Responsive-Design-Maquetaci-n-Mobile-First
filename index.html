@@ -174,66 +174,68 @@
                 </article>
             </section>
         </section>
-        <section class="main-form-container">
-            <div class="form-buy-card">
-                <div class="text-center">
-                    <h2>Datos de Pago</h2>
-                </div>
-                <div class="text-input">
-                    <label for="">Nombre</label><br>
-                    <input type="text" id="name_user" placeholder="Nombre" required>
-                </div>
-                <div class="text-input">
-                    <label for="">Apellido</label><br>
-                    <input type="text" id="lastname" placeholder="Apellido" required>
-                </div>
-                <div class="flex-input">
-                    <div class="">
-                        <label for="">Mes</label><br>
-                    <select name="month" id="month">
-                        <option value="enero">Enero</option>
-                        <option value="febrero">Febrero</option>
-                        <option value="marzo">Marzo</option>
-                        <option value="abril">Abril</option>
-                        <option value="mayo">Mayo</option>
-                        <option value="junio">Junio</option>
-                        <option value="julio">Julio</option>
-                        <option value="agosto">Agosto</option>
-                        <option value="septiembre">Septiembre</option>
-                        <option value="octubre">Octubre</option>
-                        <option value="noviembre">Noviembre</option>
-                        <option value="diciembre">Diciembre</option>
-                    </select>
+        <div id="valid_form" class="hidden">
+            <section class="main-form-container">
+                <div class="form-buy-card">
+                    <div class="text-center">
+                        <h2>Datos de Pago</h2>
                     </div>
-                    <div class="">
-                        <label for="">Año</label><br>
-                        <select name="year" id="year">
-                            <option value="2018">2018</option>
-                            <option value="2019">2019</option>
-                            <option value="2020">2020</option>
-                            <option value="2021">2021</option>
-                            <option value="2022">2022</option>
-                            <option value="2023">2023</option>
-                            <option value="2024">2024</option>
-                            <option value="2025">2025</option>
+                    <div class="text-input">
+                        <label for="">Nombre</label><br>
+                        <input type="text" id="name_user" placeholder="Nombre" required>
+                    </div>
+                    <div class="text-input">
+                        <label for="">Apellido</label><br>
+                        <input type="text" id="lastname" placeholder="Apellido" required>
+                    </div>
+                    <div class="flex-input">
+                        <div class="">
+                            <label for="">Mes</label><br>
+                        <select name="month" id="month">
+                            <option value="enero">Enero</option>
+                            <option value="febrero">Febrero</option>
+                            <option value="marzo">Marzo</option>
+                            <option value="abril">Abril</option>
+                            <option value="mayo">Mayo</option>
+                            <option value="junio">Junio</option>
+                            <option value="julio">Julio</option>
+                            <option value="agosto">Agosto</option>
+                            <option value="septiembre">Septiembre</option>
+                            <option value="octubre">Octubre</option>
+                            <option value="noviembre">Noviembre</option>
+                            <option value="diciembre">Diciembre</option>
                         </select>
+                        </div>
+                        <div class="">
+                            <label for="">Año</label><br>
+                            <select name="year" id="year">
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex-input">
+                        <div>
+                            <label for="">Número de la Tarjeta</label><br>
+                            <input type="number" id="number_card" placeholder="Número de Tarjeta" required>
+                        </div>
+                        <span>
+                            <label for="">Dígito de Seguridad</label><br>
+                            <input type="number" id="" placeholder="Dígito de Seguridad" required>
+                        </span>
+                    </div>
+                    <div class="form-button-container">
+                        <input class="validate-button" type="submit" id="validate" value="Validar"/>
                     </div>
                 </div>
-                <div class="flex-input">
-                    <div>
-                        <label for="">Número de la Tarjeta</label><br>
-                        <input type="number" id="number_card" placeholder="Número de Tarjeta" required>
-                    </div>
-                    <span>
-                        <label for="">Dígito de Seguridad</label><br>
-                        <input type="number" id="" placeholder="Dígito de Seguridad" required>
-                    </span>
-                </div>
-                <div class="form-button-container">
-                    <input class="validate-button" type="submit" id="validate" value="Validar"/>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
         <section class="footer-left">

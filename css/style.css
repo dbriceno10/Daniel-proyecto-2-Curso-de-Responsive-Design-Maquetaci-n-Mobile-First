@@ -819,7 +819,7 @@ footer .footer-left ul li a:hover {
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-    background-color: var(--soft-orange);
+    /* background-color: var(--soft-orange); */
 }
 
 .main-form-container input[type="text"] {
@@ -830,7 +830,8 @@ footer .footer-left ul li a:hover {
     margin-right: 10px;
     font-size: 1.6rem;
     /* height: 40px; */
-    border: none
+    border: none;
+    background-color: #eee;
 }
 
 .main-form-container input[type="number"] {
@@ -838,7 +839,8 @@ footer .footer-left ul li a:hover {
     min-width: 100px;
     max-width: 200px;
     font-size: 1.6rem;
-    border: none
+    border: none;
+    background-color: #eee;
 }
 
 .main-form-container select {
@@ -850,13 +852,14 @@ footer .footer-left ul li a:hover {
     border-radius: 8px;
     border: none;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-    background-color: var(--soft-orange);
+    background-color: #eee;
 }
 
 .main-form-container input[type="submit"] {
     font-size: 1.8rem;
     padding: 10px;
     width: 100px;
+    background-color: var(--off-white);
 }
 
 .validate-button {
