@@ -689,6 +689,7 @@ main {
     line-height: 1.8rem;
     color: var(--warm-black);
     font-family: "DM Sans", sans-serif;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .plans-container--slider .plans-container--card button:hover {
@@ -759,6 +760,7 @@ footer .footer-left ul li a:hover {
     text-align: center;
     /* background-color: #E5E5E5; */
     background-color: var(--soft-orange);
+    /* background-color: var(--just-white); */
     padding: 20px;
     padding-bottom: 70px;
     display: flex;
@@ -768,6 +770,7 @@ footer .footer-left ul li a:hover {
     align-self: center; */
     justify-content: center;
     align-items: center;
+    font-family: "DM Sans", sans-serif;
 }
 
 .form-buy-card {
@@ -776,8 +779,12 @@ footer .footer-left ul li a:hover {
     min-width: 320px;
     max-width: 700px;
     height: auto;
-    background-color: #e5e5e5;
+    /* background-color: #e5e5e5; */
+    /* background-color: var(--soft-orange); */
+    background-color: var(--just-white);
     padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
 
 .flex-input {
@@ -811,7 +818,8 @@ footer .footer-left ul li a:hover {
     font-size: 1.6rem;
     padding: 10px;
     border-radius: 8px;
-    border: none
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    background-color: var(--soft-orange);
 }
 
 .main-form-container input[type="text"] {
@@ -822,6 +830,7 @@ footer .footer-left ul li a:hover {
     margin-right: 10px;
     font-size: 1.6rem;
     /* height: 40px; */
+    border: none
 }
 
 .main-form-container input[type="number"] {
@@ -829,6 +838,7 @@ footer .footer-left ul li a:hover {
     min-width: 100px;
     max-width: 200px;
     font-size: 1.6rem;
+    border: none
 }
 
 .main-form-container select {
@@ -838,11 +848,34 @@ footer .footer-left ul li a:hover {
     height: 40px;
     font-size: 1.6rem;
     border-radius: 8px;
-    border: none
+    border: none;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    background-color: var(--soft-orange);
 }
 
 .main-form-container input[type="submit"] {
     font-size: 1.8rem;
     padding: 10px;
     width: 100px;
+}
+
+.validate-button {
+    width: 150px;
+    height: 48px;
+    background-color:var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+    font-family: "DM Sans", sans-serif;
+}
+
+.validate-button:hover {
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+    -webkit-text-stroke: 0.1px black;
 }
