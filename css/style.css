@@ -841,7 +841,7 @@ footer .footer-left ul li a:hover {
     border: none
 }
 
-.main-form-container input[type="button"] {
+.main-form-container input[type="submit"] {
     font-size: 1.8rem;
     padding: 10px;
     width: 100px;

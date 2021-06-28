@@ -175,13 +175,13 @@
             </section>
         </section>
         <section class="main-form-container">
-            <form action="" class="form-buy-card">
+            <div class="form-buy-card">
                 <div class="text-center">
                     <h2>Datos de Pago</h2>
                 </div>
                 <div class="text-input">
                     <label for="">Nombre</label><br>
-                    <input type="text" id="name" placeholder="Nombre" required>
+                    <input type="text" id="name_user" placeholder="Nombre" required>
                 </div>
                 <div class="text-input">
                     <label for="">Apellido</label><br>
@@ -222,7 +222,7 @@
                 <div class="flex-input">
                     <div>
                         <label for="">Número de la Tarjeta</label><br>
-                        <input type="number" id="number-card" placeholder="Número de Tarjeta" required>
+                        <input type="number" id="number_card" placeholder="Número de Tarjeta" required>
                     </div>
                     <span>
                         <label for="">Dígito de Seguridad</label><br>
@@ -230,9 +230,9 @@
                     </span>
                 </div>
                 <div class="form-button-container">
-                    <input type="button" id="validate" value="Validar"/>
+                    <input type="submit" id="validate" value="Validar"/>
                 </div>
-            </form>
+            </div>
         </section>
     </main>
     <footer class="hidden">
@@ -247,5 +247,7 @@
                 <img src="./assets/img/logo-footer.svg" alt="Logo de batatatbit 2020" title="Logo de batatabit 2020 - footer">
         </section>
     </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module" src="./src/Validator.js"></script>
 </body>
 </html>

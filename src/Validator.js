@@ -1,22 +1,27 @@
-import  { SumArray, ReduceArray, LongCardNumber, Maskify } from "./SecondaryFuntions.js"
-const card_string ="4137894711755904";
-const card_string2 = "4095571174987314";
-const card_string3 = "5117444488188614";
-const card_string4 = "6165397064636554";
-const card_string5 = "4083952015273";
+import  { SumArray, ReduceArray, LongCardNumber} from "./SecondaryFuntions.js"
+import { succesMessage, errorMessage } from "./Messages.js"
 
+const btn = document.getElementById("validate")
+btn.addEventListener("click", () => {
+    const n = document.getElementById("number_card")
+    const n2 = n.value.toString()
+    const u = document.getElementById("name_user")
+    const u2 = u.value.toString()
+    CardValidator(n2, u2)
+})
 
-const CardValidator = (digit) => {
+const CardValidator = (digit, userName) => {
+    console.log(digit)
     const arrayCard = digit.split("")
     const long = LongCardNumber(digit)
     if (!long) {
-        alert(`Tarjeta Inválida`)
+        errorMessage()
     } else {
         const ValidDigit = LunhAlgorithm(arrayCard)
         if ((ValidDigit % 10 === 0) && long) {
-            alert(`Su tarjeta ${Maskify(arrayCard)} es válida.`)
+            succesMessage(arrayCard, userName)
         } else {
-            alert(`Tarjeta Inválida`)
+            errorMessage()
         }
     }
 }
@@ -39,17 +44,9 @@ const LunhAlgorithm = (arrayCard) => {
     console.log(ValidDigit)
     return ValidDigit
 }
-// const valid1 = CardValidator(card_string)
-// console.log("tarjeta 1" + card_string)
 
-// const valid2 = CardValidator(card_string2)
-// console.log("tarjeta 2" + card_string2)
-
-// const valid3 = CardValidator(card_string3)
-// console.log("tarjeta 3" + card_string3)
-
-// const valid4 = CardValidator(card_string4)
-// console.log("tarjeta 4" + card_string4)
-
-// const valid5 = CardValidator(card_string5)
-// console.log("tarjeta 5" + card_string5)
+// const card_string ="4137894711755904";
+// const card_string2 = "4095571174987314";
+// const card_string3 = "5117444488188614";
+// const card_string4 = "6165397064636554";
+// const card_string5 = "4083952015273";
