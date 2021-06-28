@@ -1,0 +1,1 @@
+const cardNumber = document.getElementById("ingresar").value.toString()

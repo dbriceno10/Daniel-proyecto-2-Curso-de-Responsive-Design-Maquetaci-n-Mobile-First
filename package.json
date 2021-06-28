@@ -1,0 +1,34 @@
+{
+  "name": "daniel-proyecto-2-curso-de-responsive-design-maquetaci-n-mobile-first",
+  "version": "1.0.0",
+  "description": "Proyecto de maquetación web, lading page, responsive con implementación de algoritmo para validar compras con tarjeta de crédito",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbriceno10/Daniel-proyecto-2-Curso-de-Responsive-Design-Maquetaci-n-Mobile-First.git"
+  },
+  "keywords": [
+    "mobile",
+    "firt",
+    "lading",
+    "page",
+    "trading",
+    "page",
+    "buy",
+    "with",
+    "credit",
+    "card"
+  ],
+  "author": "Daniel Briceño <daniel.b100726@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbriceno10/Daniel-proyecto-2-Curso-de-Responsive-Design-Maquetaci-n-Mobile-First/issues"
+  },
+  "homepage": "https://github.com/dbriceno10/Daniel-proyecto-2-Curso-de-Responsive-Design-Maquetaci-n-Mobile-First#readme",
+  "dependencies": {
+    "sweetalert": "^2.1.2"
+  }
+}
