@@ -16,7 +16,8 @@ p3.addEventListener("click", () => {
     hideWindow(win)
 })
 const btn = document.getElementById("validate")
-btn.addEventListener("click", () => {
+btn.addEventListener("click", (e) => {
+    e.preventDefault()
     const n = document.getElementById("number_card")
     const n2 = n.value.toString()
     const u = document.getElementById("name_user")
