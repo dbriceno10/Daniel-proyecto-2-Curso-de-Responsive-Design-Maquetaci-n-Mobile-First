@@ -1,5 +1,4 @@
-import  { SumArray, ReduceArray, LongCardNumber, hideWindow} from "./SecondaryFuntions.js"
-import { succesMessage, errorMessage } from "./Messages.js"
+import  { SumArray, ReduceArray, LongCardNumber, hideWindow, succesMessage, errorMessage } from "./SecondaryFuntions.js"
 
 const p1 = document.getElementById("p1")
 const p2 = document.getElementById("p2")
@@ -34,7 +33,7 @@ const CardValidator = (digit, userName) => {
     } else {
         const ValidDigit = LunhAlgorithm(arrayCard)
         if ((ValidDigit % 10 === 0) && long) {
-            succesMessage(arrayCard, userName)
+            succesMessage(arrayCard, userName, win)
         } else {
             errorMessage()
         }
