@@ -1,6 +1,20 @@
-import  { SumArray, ReduceArray, LongCardNumber} from "./SecondaryFuntions.js"
+import  { SumArray, ReduceArray, LongCardNumber, hideWindow} from "./SecondaryFuntions.js"
 import { succesMessage, errorMessage } from "./Messages.js"
 
+const p1 = document.getElementById("p1")
+const p2 = document.getElementById("p2")
+const p3 = document.getElementById("p3")
+const win = document.getElementById("valid_form")
+
+p1.addEventListener("click", () => {
+    hideWindow(win)
+})
+p2.addEventListener("click", () => {
+    hideWindow(win)
+})
+p3.addEventListener("click", () => {
+    hideWindow(win)
+})
 const btn = document.getElementById("validate")
 btn.addEventListener("click", () => {
     const n = document.getElementById("number_card")

@@ -28,3 +28,11 @@ export const Maskify = (array) => {
     const maski = arr1.reduce((acum, val) => acum + val)
     return maski
 }
+
+export const hideWindow = (win) => {
+    if (win.classList.contains("hidden")) {
+        win.classList.remove("hidden")
+    } else {
+        win.classList.add("hidden")
+    }
+}
