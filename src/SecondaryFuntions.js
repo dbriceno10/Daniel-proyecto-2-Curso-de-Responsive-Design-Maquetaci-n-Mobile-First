@@ -39,7 +39,7 @@ export const hideWindow = (win) => {
 
 export const errorMessage = () => {
     swal({
-        title: "Tarjéta Inválida",
+        title: "Tarjeta Inválida",
         text: "Por favor revisa tus datos para continuar con la compra",
         icon: "error",
     })
