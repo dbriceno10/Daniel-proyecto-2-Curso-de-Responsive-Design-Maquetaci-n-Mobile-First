@@ -25,7 +25,6 @@ btn.addEventListener("click", (e) => {
 })
 
 const CardValidator = (digit, userName) => {
-    console.log(digit)
     const arrayCard = digit.split("")
     const long = LongCardNumber(digit)
     if (!long) {
