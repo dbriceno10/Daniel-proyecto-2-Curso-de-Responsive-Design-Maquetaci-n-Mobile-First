@@ -28,7 +28,5 @@
     "url": "https://github.com/dbriceno10/Daniel-proyecto-2-Curso-de-Responsive-Design-Maquetaci-n-Mobile-First/issues"
   },
   "homepage": "https://github.com/dbriceno10/Daniel-proyecto-2-Curso-de-Responsive-Design-Maquetaci-n-Mobile-First#readme",
-  "dependencies": {
-    "sweetalert": "^2.1.2"
-  }
+  "dependencies": {}
 }
